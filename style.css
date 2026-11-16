@@ -1,0 +1,239 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #eef7e8;
+  color: #222222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #d4ecc8;
+  border-bottom: 1px solid #a9d197;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  border: 1px solid #6f9e5c;
+  padding: 5px 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a {
+  color: #222222;
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  color: #333333;
+}
+
+.intro {
+  text-align: center;
+  color: #555555;
+}
+
+.center {
+  text-align: center;
+}
+
+.box {
+  padding: 15px;
+}
+
+/* Home page */
+.home {
+  text-align: center;
+}
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 1px solid #8fbf7a;
+  display: block;
+  margin: 20px auto;
+}
+
+.hello {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.big-name {
+  font-size: 44px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 22px;
+  color: #555555;
+  margin-top: 0;
+}
+
+.info-box {
+  width: 60%;
+  margin: 20px auto;
+  padding: 15px;
+  text-align: left;
+  background-color: #f8fcf5;
+  border: 1px solid #a9d197;
+}
+
+.info-box p {
+  margin: 5px 0;
+}
+
+/* Work page */
+.project {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #c3dfb5;
+  padding-bottom: 20px;
+}
+
+.project .box {
+  flex: 1;
+}
+
+.project-img {
+  width: 300px;
+  max-width: 100%;
+  border: 1px solid #a9d197;
+}
+
+/* Buttons and tags */
+.button {
+  display: inline-block;
+  background-color: #c2e2b2;
+  color: #222222;
+  border: 1px solid #8fbf7a;
+  padding: 8px 18px;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #addb98;
+}
+
+.tag {
+  background-color: #d4ecc8;
+  font-size: 13px;
+  padding: 3px 8px;
+}
+
+/* About and Contact pages */
+.two-columns {
+  display: flex;
+  gap: 40px;
+}
+
+.two-columns div {
+  width: 50%;
+}
+
+/* Achievements page */
+.card {
+  border: 1px solid #a9d197;
+  background-color: #f8fcf5;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.year {
+  display: inline-block;
+  font-weight: bold;
+  background-color: #c2e2b2;
+  padding: 3px 12px;
+  margin: 0 0 8px 0;
+}
+
+/* Form */
+label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #a9d197;
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  background-color: #d4ecc8;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Tablet and mobile */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0 6px;
+  }
+
+  main {
+    width: 92%;
+    padding: 10px;
+  }
+
+  .project, .two-columns {
+    flex-direction: column;
+  }
+
+  .two-columns div, .info-box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .project-img {
+    width: 100%;
+  }
+
+  .big-name {
+    font-size: 30px;
+  }
+}
